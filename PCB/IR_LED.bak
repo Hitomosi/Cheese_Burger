@@ -1,0 +1,229 @@
+EESchema Schematic File Version 4
+LIBS:Cheese_Burger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Cheese_Burger_Library:NJM2742D U?
+U 2 1 5EA2B92A
+P 2150 1700
+AR Path="/5EA07A67/5EA2B92A" Ref="U?"  Part="1" 
+AR Path="/5EA2C744/5EA2B92A" Ref="U?"  Part="2" 
+F 0 "U?" H 2150 1900 50  0000 L CNN
+F 1 "NJM2742D" H 2150 1500 50  0000 L CNN
+F 2 "" H 2150 1700 50  0001 C CNN
+F 3 "" H 2150 1700 50  0001 C CNN
+	2    2150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2B9BF
+P 2050 2100
+AR Path="/5EA07A67/5EA2B9BF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2B9BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2050 1850 50  0001 C CNN
+F 1 "GND" H 2055 1927 50  0000 C CNN
+F 2 "" H 2050 2100 50  0001 C CNN
+F 3 "" H 2050 2100 50  0001 C CNN
+	1    2050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA2BA2E
+P 2600 1700
+AR Path="/5EA07A67/5EA2BA2E" Ref="R?"  Part="1" 
+AR Path="/5EA2C744/5EA2BA2E" Ref="R?"  Part="1" 
+F 0 "R?" V 2393 1700 50  0000 C CNN
+F 1 "10" V 2484 1700 50  0000 C CNN
+F 2 "" V 2530 1700 50  0001 C CNN
+F 3 "~" H 2600 1700 50  0001 C CNN
+	1    2600 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA2BA71
+P 1400 1750
+AR Path="/5EA07A67/5EA2BA71" Ref="R?"  Part="1" 
+AR Path="/5EA2C744/5EA2BA71" Ref="R?"  Part="1" 
+F 0 "R?" H 1330 1704 50  0000 R CNN
+F 1 "10k" H 1330 1795 50  0000 R CNN
+F 2 "" V 1330 1750 50  0001 C CNN
+F 3 "~" H 1400 1750 50  0001 C CNN
+	1    1400 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2BADF
+P 1400 1900
+AR Path="/5EA07A67/5EA2BADF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2BADF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 1650 50  0001 C CNN
+F 1 "GND" H 1405 1727 50  0000 C CNN
+F 2 "" H 1400 1900 50  0001 C CNN
+F 3 "" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1950 2050 2100
+Wire Wire Line
+	1400 1600 1250 1600
+Connection ~ 1400 1600
+Text HLabel 1250 1600 0    50   Input ~ 0
+IR_LED_IN
+Wire Wire Line
+	1850 1800 1750 1800
+Wire Wire Line
+	1750 1800 1750 2350
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5EA2BC4E
+P 2950 1700
+AR Path="/5EA07A67/5EA2BC4E" Ref="Q?"  Part="1" 
+AR Path="/5EA2C744/5EA2BC4E" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3155 1746 50  0000 L CNN
+F 1 "2SK2796" H 3155 1655 50  0000 L CNN
+F 2 "" H 3150 1800 50  0001 C CNN
+F 3 "~" H 2950 1700 50  0001 C CNN
+	1    2950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2350 3050 1900
+Wire Wire Line
+	1750 2350 3050 2350
+$Comp
+L Device:R R?
+U 1 1 5EA2BCE2
+P 3050 2500
+AR Path="/5EA07A67/5EA2BCE2" Ref="R?"  Part="1" 
+AR Path="/5EA2C744/5EA2BCE2" Ref="R?"  Part="1" 
+F 0 "R?" H 2980 2454 50  0000 R CNN
+F 1 "33 1/2W 1%" H 2980 2545 50  0000 R CNN
+F 2 "" V 2980 2500 50  0001 C CNN
+F 3 "~" H 3050 2500 50  0001 C CNN
+	1    3050 2500
+	-1   0    0    1   
+$EndComp
+Connection ~ 3050 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2BD4F
+P 3050 2650
+AR Path="/5EA07A67/5EA2BD4F" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2BD4F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 2400 50  0001 C CNN
+F 1 "GND" H 3055 2477 50  0000 C CNN
+F 2 "" H 3050 2650 50  0001 C CNN
+F 3 "" H 3050 2650 50  0001 C CNN
+	1    3050 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1600 1850 1600
+$Comp
+L Device:LED_ALT D?
+U 1 1 5EA2BE25
+P 3050 1250
+AR Path="/5EA07A67/5EA2BE25" Ref="D?"  Part="1" 
+AR Path="/5EA2C744/5EA2BE25" Ref="D?"  Part="1" 
+F 0 "D?" V 3088 1132 50  0000 R CNN
+F 1 "LED_ALT" V 2997 1132 50  0000 R CNN
+F 2 "" H 3050 1250 50  0001 C CNN
+F 3 "~" H 3050 1250 50  0001 C CNN
+	1    3050 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5EA2BE84
+P 3050 950
+AR Path="/5EA07A67/5EA2BE84" Ref="D?"  Part="1" 
+AR Path="/5EA2C744/5EA2BE84" Ref="D?"  Part="1" 
+F 0 "D?" V 3088 832 50  0000 R CNN
+F 1 "LED_ALT" V 2997 832 50  0000 R CNN
+F 2 "" H 3050 950 50  0001 C CNN
+F 3 "~" H 3050 950 50  0001 C CNN
+	1    3050 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 1500 3050 1400
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EA2BEEB
+P 3050 800
+AR Path="/5EA07A67/5EA2BEEB" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2BEEB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 650 50  0001 C CNN
+F 1 "+BATT" H 3065 973 50  0000 C CNN
+F 2 "" H 3050 800 50  0001 C CNN
+F 3 "" H 3050 800 50  0001 C CNN
+	1    3050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1450 2050 1250
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EA2B986
+P 2050 1250
+AR Path="/5EA07A67/5EA2B986" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2B986" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2050 1100 50  0001 C CNN
+F 1 "+BATT" H 2065 1423 50  0000 C CNN
+F 2 "" H 2050 1250 50  0001 C CNN
+F 3 "" H 2050 1250 50  0001 C CNN
+	1    2050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2C0C1
+P 1400 1050
+AR Path="/5EA07A67/5EA2C0C1" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2C0C1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 800 50  0001 C CNN
+F 1 "GND" H 1405 877 50  0000 C CNN
+F 2 "" H 1400 1050 50  0001 C CNN
+F 3 "" H 1400 1050 50  0001 C CNN
+	1    1400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EA2C106
+P 1400 850
+AR Path="/5EA07A67/5EA2C106" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2C744/5EA2C106" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 700 50  0001 C CNN
+F 1 "+BATT" H 1415 1023 50  0000 C CNN
+F 2 "" H 1400 850 50  0001 C CNN
+F 3 "" H 1400 850 50  0001 C CNN
+	1    1400 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 850  1300 850 
+Wire Wire Line
+	1400 1050 1300 1050
+Text GLabel 1300 1050 0    50   Input ~ 0
+GND
+Text GLabel 1300 850  0    50   Input ~ 0
+BATT
+$EndSCHEMATC

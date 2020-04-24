@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+LIBS:Cheese_Burger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Cheese_Burger_Library:NJU7072D U?
+U 2 1 5EA2CADB
+P 2450 2400
+AR Path="/5EA2C81D/5EA2CADB" Ref="U?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2CADB" Ref="U?"  Part="2" 
+AR Path="/5EA2D9F3/5EA2CADB" Ref="U?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2CADB" Ref="U?"  Part="2" 
+F 0 "U?" H 2450 2600 50  0000 L CNN
+F 1 "NJU7072D" H 2450 2200 50  0000 L CNN
+F 2 "" H 2450 2400 50  0001 C CNN
+F 3 "" H 2450 2400 50  0001 C CNN
+	2    2450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5EA2CB66
+P 2350 2150
+AR Path="/5EA2C81D/5EA2CB66" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2CB66" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2CB66" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2CB66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 2000 50  0001 C CNN
+F 1 "+3.3VA" H 2365 2323 50  0000 C CNN
+F 2 "" H 2350 2150 50  0001 C CNN
+F 3 "" H 2350 2150 50  0001 C CNN
+	1    2350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA2CB98
+P 2350 1850
+AR Path="/5EA2C81D/5EA2CB98" Ref="R?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2CB98" Ref="R?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2CB98" Ref="R?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2CB98" Ref="R?"  Part="1" 
+F 0 "R?" V 2143 1850 50  0000 C CNN
+F 1 "220k" V 2234 1850 50  0000 C CNN
+F 2 "" V 2280 1850 50  0001 C CNN
+F 3 "~" H 2350 1850 50  0001 C CNN
+	1    2350 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EA2CC2D
+P 2350 1500
+AR Path="/5EA2C81D/5EA2CC2D" Ref="C?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2CC2D" Ref="C?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2CC2D" Ref="C?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2CC2D" Ref="C?"  Part="1" 
+F 0 "C?" V 2098 1500 50  0000 C CNN
+F 1 "22p" V 2189 1500 50  0000 C CNN
+F 2 "" H 2388 1350 50  0001 C CNN
+F 3 "~" H 2350 1500 50  0001 C CNN
+	1    2350 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 2400 2850 2400
+Wire Wire Line
+	2850 2400 2850 1850
+Wire Wire Line
+	2850 1850 2500 1850
+Wire Wire Line
+	2500 1500 2850 1500
+Wire Wire Line
+	2850 1500 2850 1850
+Connection ~ 2850 1850
+Wire Wire Line
+	2200 1500 1800 1500
+Wire Wire Line
+	1800 1500 1800 1850
+Wire Wire Line
+	1800 2500 2150 2500
+Wire Wire Line
+	2200 1850 1800 1850
+Connection ~ 1800 1850
+Wire Wire Line
+	1800 1850 1800 2500
+Wire Wire Line
+	2850 2400 2950 2400
+Connection ~ 2850 2400
+Text HLabel 2950 2400 2    50   Output ~ 0
+IR_SENSOR_OUT
+Text GLabel 2150 2300 0    50   Input ~ 0
+1.65V
+$Comp
+L Device:C C?
+U 1 1 5EA2CFD2
+P 1550 2500
+AR Path="/5EA2C81D/5EA2CFD2" Ref="C?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2CFD2" Ref="C?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2CFD2" Ref="C?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2CFD2" Ref="C?"  Part="1" 
+F 0 "C?" V 1298 2500 50  0000 C CNN
+F 1 "22p" V 1389 2500 50  0000 C CNN
+F 2 "" H 1588 2350 50  0001 C CNN
+F 3 "~" H 1550 2500 50  0001 C CNN
+	1    1550 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA2D012
+P 1400 2800
+AR Path="/5EA2C81D/5EA2D012" Ref="R?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D012" Ref="R?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D012" Ref="R?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D012" Ref="R?"  Part="1" 
+F 0 "R?" H 1330 2754 50  0000 R CNN
+F 1 "220k" H 1330 2845 50  0000 R CNN
+F 2 "" V 1330 2800 50  0001 C CNN
+F 3 "~" H 1400 2800 50  0001 C CNN
+	1    1400 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 2650 1400 2500
+Wire Wire Line
+	1700 2500 1800 2500
+Connection ~ 1800 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2D1CF
+P 1400 2950
+AR Path="/5EA2C81D/5EA2D1CF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D1CF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D1CF" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D1CF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 2700 50  0001 C CNN
+F 1 "GND" H 1405 2777 50  0000 C CNN
+F 2 "" H 1400 2950 50  0001 C CNN
+F 3 "" H 1400 2950 50  0001 C CNN
+	1    1400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5EA2D1EB
+P 1400 1850
+AR Path="/5EA2C81D/5EA2D1EB" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D1EB" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D1EB" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D1EB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1400 1700 50  0001 C CNN
+F 1 "+3.3VA" H 1415 2023 50  0000 C CNN
+F 2 "" H 1400 1850 50  0001 C CNN
+F 3 "" H 1400 1850 50  0001 C CNN
+	1    1400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo_ALT D?
+U 1 1 5EA2D233
+P 1400 2150
+AR Path="/5EA2C81D/5EA2D233" Ref="D?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D233" Ref="D?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D233" Ref="D?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D233" Ref="D?"  Part="1" 
+F 0 "D?" V 1300 1600 50  0000 L CNN
+F 1 "D_Photo_ALT" V 1400 1600 50  0000 L CNN
+F 2 "" H 1350 2150 50  0001 C CNN
+F 3 "~" H 1350 2150 50  0001 C CNN
+	1    1400 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 2500 1400 2250
+Connection ~ 1400 2500
+Wire Wire Line
+	1400 1950 1400 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2D4B8
+P 2350 2950
+AR Path="/5EA2C81D/5EA2D4B8" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D4B8" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D4B8" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D4B8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 2700 50  0001 C CNN
+F 1 "GND" H 2355 2777 50  0000 C CNN
+F 2 "" H 2350 2950 50  0001 C CNN
+F 3 "" H 2350 2950 50  0001 C CNN
+	1    2350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2950 2350 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5EA2D5E7
+P 3400 2000
+AR Path="/5EA2C81D/5EA2D5E7" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D5E7" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D5E7" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D5E7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 1750 50  0001 C CNN
+F 1 "GND" H 3405 1827 50  0000 C CNN
+F 2 "" H 3400 2000 50  0001 C CNN
+F 3 "" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5EA2D5FE
+P 3400 1750
+AR Path="/5EA2C81D/5EA2D5FE" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F0/5EA2D5FE" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F3/5EA2D5FE" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2D9F6/5EA2D5FE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 1600 50  0001 C CNN
+F 1 "+3.3VA" H 3415 1923 50  0000 C CNN
+F 2 "" H 3400 1750 50  0001 C CNN
+F 3 "" H 3400 1750 50  0001 C CNN
+	1    3400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1750 3300 1750
+Wire Wire Line
+	3400 2000 3300 2000
+Text GLabel 3300 1750 0    50   Input ~ 0
+3.3VA
+Text GLabel 3300 2000 0    50   Input ~ 0
+GND
+$EndSCHEMATC
