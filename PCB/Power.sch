@@ -353,9 +353,8 @@ Wire Wire Line
 Wire Wire Line
 	5900 1700 5900 1600
 Wire Wire Line
-	5900 1600 6000 1600
-Connection ~ 5900 1600
-Text GLabel 6000 1600 2    50   Output ~ 0
+	6400 2100 6500 2100
+Text GLabel 6500 2100 2    50   Output ~ 0
 1.65V
 $Comp
 L power:PWR_FLAG #FLG0102
@@ -385,4 +384,5 @@ $EndComp
 Wire Wire Line
 	5300 1250 5500 1250
 Connection ~ 5500 1250
+Connection ~ 6400 2100
 $EndSCHEMATC
