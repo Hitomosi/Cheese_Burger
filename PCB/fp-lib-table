@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Cheese_Burger_Library)(type KiCad)(uri ${KIPRJMOD}/Cheese_Burger_Library.pretty)(options "")(descr ""))
+)

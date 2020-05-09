@@ -63,12 +63,12 @@ F1 "IR_Sensor.sch" 50
 F2 "IR_SENSOR_OUT" O L 5400 4600 50 
 $EndSheet
 $Comp
-L Connector_Generic:Conn_02x07_Odd_Even J?
+L Connector_Generic:Conn_02x07_Odd_Even J1
 U 1 1 5EA2DC29
 P 4400 3700
-F 0 "J?" H 4450 4217 50  0000 C CNN
+F 0 "J1" H 4450 4217 50  0000 C CNN
 F 1 "BH-14SG" H 4450 4126 50  0000 C CNN
-F 2 "" H 4400 3700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 4400 3700 50  0001 C CNN
 F 3 "~" H 4400 3700 50  0001 C CNN
 	1    4400 3700
 	1    0    0    -1  
